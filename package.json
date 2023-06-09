@@ -1,0 +1,28 @@
+{
+  "name": "test-nodeapp-ek",
+  "version": "1.0.0",
+  "description": "// \"start\": \"nodemon --exec babel-node index.js\",\r     //\"pulpfiction\": \"node index.js\",",
+  "main": "index.js",
+
+
+  "scripts": {
+    "test": "echo \"Test Output\" && exit 1",
+    "start": "node --experimental-modules index"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edistyping/test-app-priceisart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edistyping/test-app-priceisart/issues"
+  },
+  "homepage": "https://github.com/edistyping/test-app-priceisart#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+
+  }
+}

@@ -1,19 +1,19 @@
-// Load HTTP module
-const http = require("http");
 
+// const db = require('./api/queries')
+// import db from './api/queries.js';
+
+
+// import express from 'express';
+const express = require("express");
+const app = express();
 const port = process.env.PORT || 3000;
 
-// Create HTTP server
-const server = http.createServer(function (req, res) {
-  // Set the response HTTP header with HTTP status and Content type
-  res.writeHead(200, { "Content-Type": "text/plain" });
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
 
-  // Send the response body "Hello World"
-  console.log("Hello world")
-  res.end("Hello World\n");
+
+app.listen(port, () => {
+  console.log(`listening on ${port}`);
 });
 
-// Prints a log once the server starts listening
-server.listen(port, function () {
-  console.log(`Server running... `);
-});
